@@ -105,6 +105,13 @@ public extension ImagePlayerViewController
         processCurrentImageUrl()
     }
     
+    func updateImageWith(newImageData: Data)
+    {
+        ImagePlayerViewController.s_Logger.debug("Updating image with new image data.")
+        
+        updateImageWith(data: newImageData)
+    }
+    
     func updateContentModeWith(newContentMode: UIImageView.ContentMode)
     {
         ImagePlayerViewController.s_Logger.debug("Updating image content mode with '\(newContentMode.rawValue)'.")
